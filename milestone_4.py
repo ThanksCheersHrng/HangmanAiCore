@@ -16,12 +16,12 @@ class Hangman:
         #initial attribute without parameter 
         self.list_of_guesses = []               # a list of the guesses that have already been tried
    
-    def check_guess(guess):
+    def check_guess(self, guess):
         guess = guess.lower()
-        if guess in word:
+        if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
 
-    def ask_for_input(guess):
+    def ask_for_input(self):
         while True: 
             #Input guess for a letter 
             guess = input("Enter a single letter: ")
@@ -29,11 +29,11 @@ class Hangman:
             if (guess.isalpha() and len(guess) == 1) is False:
                 print("Invalid letter. Please, enter a single alphabetical character. ")
             #check guess hasn't been guessed before.
-            elif guess in list_of_guesses:
+            elif guess in self.list_of_guesses:
                 print("You already tried that letter! ")
             else: #if the guess is new and appropriate 
-                list_of_guesses.append(guess)
-                check_guess(guess)
+                self.check_guess(guess)
+                self.list_of_guesses.append(guess)
                 
 
 word_list1 = ["blueberry","strawberry","raspberry","peach","tomato"] 
@@ -42,6 +42,6 @@ game1 = Hangman(word_list1)
 
 #Hangman.ask_for_input()
 #ask_for_input() #still says this function not defined (outside of the class, I presume.)
-game1.ask_for_input() #name 'list_of_guesses' not defined
+game1.ask_for_input() #name 'list_of_guesses' not defined/ 'self' not defined (depending on if list_of_guesses or self.list_of_guesses is input for ask_for_input function.)
 
                                                         
