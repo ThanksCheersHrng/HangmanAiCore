@@ -20,7 +20,8 @@ class Hangman:
         guess = guess.lower()
         if guess in word:
             print(f"Good guess! {guess} is in the word.")
-    def ask_for_input():
+
+    def ask_for_input(guess):
         while True: 
             #Input guess for a letter 
             guess = input("Enter a single letter: ")
@@ -40,7 +41,7 @@ game1 = Hangman(word_list1)
 
 
 #Hangman.ask_for_input()
-ask_for_input() #still says this function not defined (outside of class?)
-game1.ask_for_input() #still says takes 0 pos arg but 1 given
+#ask_for_input() #still says this function not defined (outside of the class, I presume.)
+game1.ask_for_input() #name 'list_of_guesses' not defined
 
                                                         
