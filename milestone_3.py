@@ -3,13 +3,16 @@ import random as rn
 word_list = ["blueberry","strawberry","raspberry","peach","tomato"] 
 word = rn.choice(word_list)
 
+print(len(word), len(set(word)))
+
+'''
 #checking if guess in word
 def check_guess(guess):
     guess = guess.lower()
     if guess in word:
         print(f"Good guess! {guess} is in the word.")
     else:
-        print(f"Sorry, {guess} is not in the word. Try again.")
+        print(f"Sorry, {guess} is not in the word. Try again. ")
 
 #asking for input and checking validity:
 def ask_for_input(): 
@@ -25,3 +28,4 @@ def ask_for_input():
 
 #call to check game play
 ask_for_input()
+'''
