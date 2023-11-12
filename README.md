@@ -28,6 +28,7 @@ Within this repo are the following files:
  - README.txt (an older version of README that you can ignore)
  - milestone\_2.py (an initial piece of code named according to AiCore's instructions) 
  - milestone\_3.py (a more developed piece of code on which you can run a single turn of Hangman) 
+ - milestone\_4.py (an encapsulation of the work so far, folded into a class called Hangman) 
 
 ## 2. Installation instructions
 
@@ -36,7 +37,7 @@ To install this game of Hangman, pull this repo or simply copy and paste milesto
 
 ## 3. Usage instructions
 
-Run milestone\_3.py to play a game of Hangman. If you don't know how that game works, here's the general idea: https://www.wikihow.com/Play-Hangman
+Run milestone\_\?.py to play a game of Hangman. If you don't know how that game works, here's the general idea: https://www.wikihow.com/Play-Hangman
 
 
 ## 4. File structure
