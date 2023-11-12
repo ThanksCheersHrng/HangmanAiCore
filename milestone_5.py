@@ -3,7 +3,7 @@ import random as rn
 
 #defining the Hangman class
 class Hangman:
-    def __init__(self, word_list, num_lives = 5):
+    def __init__(self, word_list, num_lives):
         #initialised attributes 
         self.word_list = word_list               # word_list- pre-programmed options for what the word could be
         self.num_lives = num_lives                  # number of lives the player has at the start of the game
@@ -45,20 +45,23 @@ class Hangman:
                 self.list_of_guesses.append(guess)
                 
 
-def play_game(word_list):
-    num_lives = 5
+def play_game(word_list, num_lives):
+    num_lives = 5 
     game = Hangman(word_list, num_lives)
-    while True:
-        if game.num_lives == 0:
-            print('You lost, mate!')
-            break
-        if game.num_letters > 0: 
-            game.ask_for_input()
-        elif game.num_letters == 0: 
-            print("Congratulations! You won the game!")
-            break
-
+    while True: 
+        print(f"game lives {game.num_lives}.")
+        if game.num_lives == 0: 
+            print(f"game lives {game.num_lives}.")
+            print("You lost.")
+        else: 
+            if game.num_letters > 0: 
+                print(f"game lives {game.num_lives}.")
+                game.ask_for_input() 
+            else:
+                print(f"game lives {game.num_lives}.")
+                print("Congratulations. You won the game.")
+            
 
 word_list1 = ["blueberry","strawberry","raspberry","peach","tomato"] 
 
-play_game(word_list1)
+play_game(word_list1, 5)
