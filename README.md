@@ -16,7 +16,7 @@ https://portal.theaicore.com/project/ccec2912-b0c5-4798-bcfd-21add0e658af
 
 Basically I'm creating a game of Hangman by following instructions on AiCore's teaching platform. The project aim is to combine and 
 consolidate what I've learned so far on AiCore into a functional activity.
-I have used file manipulation in GitBash, Python coding (in VSCode, despite Spyder being *chef's kiss*), and git and GitHub to submit this project online. 
+I have used file manipulation in GitBash, Python coding (in VSCode, despite Spyder being \**chef's kiss*\*), and git and GitHub to submit this project online. 
 So far I haven't learned anything new by completing this project, but I have revised quite a few little things. For instance:
  - mv is the git bash command for moving a file from one directory 
  - README.txt is a markdown file so I can use the same formatting codes as in RMarkdown (with which I am more familiar) 
@@ -26,30 +26,30 @@ Within this repo are the following files:
 
  - README.md (this file)
  - README.txt (an older version of README that you can ignore)
- - milestone_2.py (an initial piece of code named according to AiCore's instructions) 
- - milestone_3.py (a more developed piece of code on which you can run a single turn of Hangman) 
+ - milestone\_2.py (an initial piece of code named according to AiCore's instructions) 
+ - milestone\_3.py (a more developed piece of code on which you can run a single turn of Hangman) 
 
 ## 2. Installation instructions
 
-To install this game of Hangman, pull this repo or simply copy and paste milestone_3.py into your own file. 
+To install this game of Hangman, pull this repo or simply copy and paste milestone\_3.py into your own file. 
 
 
 ## 3. Usage instructions
 
-Run milestone_3.py to play a game of Hangman. If you don't know how that game works, here's the general idea: https://www.wikihow.com/Play-Hangman
+Run milestone\_3.py to play a game of Hangman. If you don't know how that game works, here's the general idea: https://www.wikihow.com/Play-Hangman
 
 
 ## 4. File structure
 
 At this stage there is no directory hierarchy. There is simply the Hangman folder which contains all relevant documents. 
 
-The structure of milestone_3.py is as follows:
+The structure of milestone\_3.py is as follows:
 
  - import random 
  - select a random word from a list 
- - define check_guess function 
+ - define check\_guess function 
  - define ask\_for\_input function
- - call ask_ for _input function. 
+ - call ask\_for\_input function. 
 
 
 ## 5. License information
