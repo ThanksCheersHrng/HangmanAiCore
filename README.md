@@ -6,8 +6,7 @@
 ### 2. Installation instructions
 ### 3. Usage instructions
 ### 4. File structure 
-### 5. LIcense information 
-
+### 5. License information 
 
 
 Not sure what this is or why it was pasted off my cursor but it might be important: 
@@ -23,29 +22,37 @@ So far I haven't learned anything new by completing this project, but I have rev
  - README.txt is a markdown file so I can use the same formatting codes as in RMarkdown (with which I am more familiar) 
  - string.lower() will turn every letter in string to lowercase 
 
+Within this repo are the following files: 
+
+ - README.md (this file)
+ - README.txt (an older version of README that you can ignore)
+ - milestone_2.py (an initial piece of code named according to AiCore's instructions) 
+ - milestone_3.py (a more developed piece of code on which you can run a single turn of Hangman) 
+
 ## 2. Installation instructions
 
-To run the Hangman game I've created, I think you'll just be interested in my python file, milestone_2.py (named according to AiCore's directions). 
-I don't think it's complicated. git pull my directory () to your device, then run milestone_2.py to play the game. 
-
-
+To install this game of Hangman, pull this repo or simply copy and paste milestone_3.py into your own file. 
 
 
 ## 3. Usage instructions
 
-Run milestone_2.py to play a game of Hangman. If you don't know how that game works, here's the general idea: https://www.wikihow.com/Play-Hangman
-
-
-
-
+Run milestone_3.py to play a game of Hangman. If you don't know how that game works, here's the general idea: https://www.wikihow.com/Play-Hangman
 
 
 ## 4. File structure
 
+At this stage there is no directory hierarchy. There is simply the Hangman folder which contains all relevant documents. 
 
+The structure of milestone_3.py is as follows:
 
+ - import random 
+ - select a random word from a list 
+ - define check_guess function 
+ - define ask\_for\_input function
+ - call ask_ for _input function. 
 
 
 ## 5. License information
 
-?
+This code is following step-by-step instructions from AiCore, so credit for code development goes to them. Anyone is welcome to use this code to help their learning. 
+ 
