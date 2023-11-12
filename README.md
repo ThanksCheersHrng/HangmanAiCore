@@ -29,6 +29,22 @@ Within this repo are the following files:
  - milestone\_2.py (an initial piece of code named according to AiCore's instructions) 
  - milestone\_3.py (a more developed piece of code on which you can run a single turn of Hangman) 
  - milestone\_4.py (an encapsulation of the work so far, folded into a class called Hangman) 
+ - milestone\_5.py (should be the final iteration of the game, which includes the winning/losing logic of it.) 
+
+### Learned and yet to learn: 
+
+Two major bugs have shaped my learning experience on this project. 
+The first was solved by a friend who is a full-time coder. 
+When initiating self.attributes I should NOT include the self prefix in their definitions; this I knew. However, when I kept getting NameErrors in my attempts to execute a function defined in the class, it was consistently because somewhere in the definition of the *function* I was **not** including the self prefix for a called attribute. In short:
+ - Defining attributes within a class doesn't require the self prefix
+ - Defining functions within a class *does*. 
+
+The second major bug is yet to be solved.
+I've tried various iterations of positioning the play\_game function\- instructions dictate that it be on its own (outside the class), but that consistently left it seemingly not adjusting the number of lives *within the specific instance of game* whenever I left print checks in the function definition. 
+So you'll see in my latest iteration of milestone\_5.py, I attempted to turn the play\_game function into a class function. 
+The same issue persists. smh 
+
+However, as I have done more than was asked of me for this assignment, and I don't have all week to work on this, I'm calling it... a project, complete. :/ 
 
 ## 2. Installation instructions
 

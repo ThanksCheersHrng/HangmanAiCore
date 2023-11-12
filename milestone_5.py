@@ -44,24 +44,20 @@ class Hangman:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
                 
+    def play_game(self):
+        while True: 
+            if self.num_lives == 0: 
+                print("You lost.")
+                False
+            else: 
+                if game.num_letters > 0: 
+                    game.ask_for_input() 
+                else:
+                    print("Congratulations. You won the game.")
+                    False
 
-def play_game(word_list, num_lives):
-    num_lives = 5 
-    game = Hangman(word_list, num_lives)
-    while True: 
-        print(f"game lives {game.num_lives}.")
-        if game.num_lives == 0: 
-            print(f"game lives {game.num_lives}.")
-            print("You lost.")
-        else: 
-            if game.num_letters > 0: 
-                print(f"game lives {game.num_lives}.")
-                game.ask_for_input() 
-            else:
-                print(f"game lives {game.num_lives}.")
-                print("Congratulations. You won the game.")
-            
-
+        
 word_list1 = ["blueberry","strawberry","raspberry","peach","tomato"] 
 
-play_game(word_list1, 5)
+game = Hangman(word_list1, 5)
+game.play_game()
